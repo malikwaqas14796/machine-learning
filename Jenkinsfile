@@ -14,7 +14,7 @@ pipeline {
             
                 steps {
                     script {
-                    'python hello-world.php'
+                    'python hello-world.py'
                 }
             }
         }
