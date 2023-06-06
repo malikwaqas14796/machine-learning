@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'php --version'
+                'python --version'
             }
         }
         stage('Test stage') {
             steps {
-                echo 'php hello-world.php'
+                'python hello-world.php'
             }
         }
         // stage('Deploy') {
