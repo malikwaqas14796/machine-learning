@@ -6,6 +6,7 @@ pipeline {
             
                 steps {
                     script {
+                    bat 'choco install python3 -y'
                     bat 'python --version'
                 }
             }
