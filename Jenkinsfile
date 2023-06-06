@@ -6,7 +6,7 @@ pipeline {
             
                 steps {
                     script {
-                    'python --version'
+                    sh 'python --version'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
             
                 steps {
                     script {
-                    'python hello-world.py'
+                    sh 'python hello-world.py'
                 }
             }
         }
