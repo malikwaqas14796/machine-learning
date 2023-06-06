@@ -3,13 +3,17 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                'python --version'
+            script {
+                steps {
+                    'python --version'
+                }
             }
         }
         stage('Test stage') {
-            steps {
-                'python hello-world.php'
+            script {
+                steps {
+                    'python hello-world.php'
+                }
             }
         }
         // stage('Deploy') {
