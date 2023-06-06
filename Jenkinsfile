@@ -3,22 +3,24 @@ pipeline {
 
     stages {
         stage('Build') {
-            script {
+            
                 steps {
+                    script {
                     'python --version'
                 }
             }
         }
         stage('Test stage') {
-            script {
+            
                 steps {
+                    script {
                     'python hello-world.php'
                 }
             }
         }
         // stage('Deploy') {
         //     steps {
-        //         echo 'Deploying.....'
+        //         echo 'Deploying......'
         //     }
         // }
     }
