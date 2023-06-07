@@ -38,7 +38,7 @@ pipeline {
         failure {
             script {
                 emailext subject: 'Build Unsuccessful', 
-                          body: '''$BUILD_LOG''',
+                          body: '<strong>Dear Concerned</strong><br><br>Job execution unsuccessfully.<br><br>'+'''$BUILD_LOG'''+'<br><br>Regards<br><br><strong>Jenkins Support</strong>',
                           to: 'waqas.rafique@nayatel.com',
                           from: 'malikwaqas14796@gmail.com'
             }
