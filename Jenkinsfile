@@ -18,11 +18,11 @@ pipeline {
                 }
             }
         }
-        // stage('Deploy') {
-        //     steps {
-        //         bat 'ping 172.16.178.94'
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                bat 'ping 172.16.178.94'
+            }
+        }
     }
 
     post {
