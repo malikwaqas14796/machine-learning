@@ -6,7 +6,7 @@ pipeline {
             
                 steps {
                     script {
-                    bat 'python --version'
+                    batt 'python --version'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
     }
 
     post {
-        success {
+        failure {
             script{
                 emailext subject: 'Build Successful', 
                           body: 'The build was successful. Congratulations!',
