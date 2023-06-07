@@ -31,7 +31,6 @@ pipeline {
                 emailext subject: 'Build Successful', 
                           body: 'The build was successful. Congratulations!',
                           to: 'waqas.rafique@nayatel.com',
-                          from: 'malikwaqas14796@gmail.com'
             }
         }
     }
