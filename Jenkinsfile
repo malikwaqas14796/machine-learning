@@ -13,7 +13,7 @@ pipeline {
         stage('Test stage') {
             
                 steps {
-                    script {
+                    script{
                     bat 'python C:/Users/muhammad-waqas/Desktop/test-case/test-case.py'
                 }
             }
