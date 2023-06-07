@@ -18,9 +18,20 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
-            steps {
-                bat 'ping 172.16.178.94'
+        // stage('Deploy') {
+        //     steps {
+        //         bat 'ping 172.16.178.94'
+        //     }
+        // }
+    }
+
+    post {
+        success {
+            script {
+                emailext subject: 'Build Successful', 
+                          body: 'The build was successful. Congratulations!',
+                          to: 'waqas.rafique@nayatel.com',
+                          from: 'malikwaqas14796@gmail.com'
             }
         }
     }
