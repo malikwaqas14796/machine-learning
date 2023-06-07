@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'telnet 172.16.178.94 2002 >error.log'
+                bat 'ping 172.16.178.94'
             }
         }
     }
