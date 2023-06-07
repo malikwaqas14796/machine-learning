@@ -30,7 +30,7 @@ pipeline {
             script {
                 emailext subject: 'Build Successful', 
                           body: 'The build was successful. Congratulations!',
-                          to: 'malikwaqas14796@gmail.com',
+                          to: 'waqas.rafique@nayatel.com',
                           from: 'malikwaqas14796@gmail.com'
             }
         }
