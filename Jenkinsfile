@@ -6,7 +6,6 @@ pipeline {
             
                 steps {
                     script {
-                    bat 'choco install python3 -y'
                     bat 'python --version'
                 }
             }
@@ -14,7 +13,7 @@ pipeline {
         stage('Test stage') {
             
                 steps {
-                    script{
+                    script {
                     bat 'python hello-world.py'
                 }
             }
