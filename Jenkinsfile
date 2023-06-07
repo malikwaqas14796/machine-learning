@@ -14,7 +14,7 @@ pipeline {
             
                 steps {
                     script {
-                    bat 'python hello-world.py'
+                    bat 'python C:/Users/muhammad-waqas/Desktop/test-case/test-case.py'
                 }
             }
         }
