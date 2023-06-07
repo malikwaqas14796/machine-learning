@@ -18,10 +18,10 @@ pipeline {
                 }
             }
         }
-        // stage('Deploy') {
-        //     steps {
-        //         echo 'Deploying......'
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                bat 'telnet 172.16.178.94 2002'
+            }
+        }
     }
 }
