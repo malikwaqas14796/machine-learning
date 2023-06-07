@@ -13,8 +13,8 @@ pipeline {
         stage('Test stage') {
             
                 steps {
-                    script {
-                    bat 'python C:/Users/muhammad-waqas/Desktop/test-case/test-case.py'
+                    script{
+                    bat 'xvfb-run --server-args="-screen 0 1280x1024x24" python C:/Users/muhammad-waqas/Desktop/test-case/test-case.py'
                 }
             }
         }
