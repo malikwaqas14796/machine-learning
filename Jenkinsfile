@@ -14,7 +14,7 @@ pipeline {
             
                 steps {
                     script {
-                    bat 'xvfb-run --server-args="-screen 0 1280x1024x24" python C:/Users/muhammad-waqas/Desktop/test-case/test-case.py'
+                    bat 'python C:/Users/muhammad-waqas/Desktop/test-case/test-case.py'
                 }
             }
         }
