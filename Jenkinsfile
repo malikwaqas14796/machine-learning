@@ -29,7 +29,7 @@ pipeline {
         success {
             script {
                 emailext subject: 'Build Successful', 
-                          body: '<strong>Dear Concerned</strong><br><br>Job executed successfully.<br><br>Regards<br><br><strong>Jenkins Support</strong>',
+                          body: '<strong>Dear Concerned</strong><br><br>Job executed successfully. Details are given below<br><br>'+'''$BUILD_LOG'''+'<br><br>Regards<br><br><strong>Jenkins Support</strong>',
                           to: 'waqas.rafique@nayatel.com',
                           from: 'malikwaqas14796@gmail.com'
             }
