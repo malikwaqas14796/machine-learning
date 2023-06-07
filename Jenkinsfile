@@ -7,7 +7,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build Stage') {
             
                 steps {
                     script {
@@ -15,7 +15,7 @@ pipeline {
                 }
             }
         }
-        stage('Test stage') {
+        stage('Automated Testing Stage') {
             
                 steps {
                     script {
@@ -23,7 +23,7 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
+        stage('Deployment Stage') {
             steps {
                 bat 'ping 172.16.178.94'
             }
