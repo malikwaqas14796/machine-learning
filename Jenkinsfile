@@ -28,7 +28,7 @@ pipeline {
     post {
         success {
             script{
-                email subject: 'Build Successful', 
+                emailext subject: 'Build Successful', 
                           body: 'The build was successful. Congratulations!',
                           to: 'malikwaqas14796@gmail.com',
                           from: 'malikwaqas14796@gmail.com'
